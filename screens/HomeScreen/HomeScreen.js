@@ -1,14 +1,16 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
- 
+import Slides from './../../components/common/slides';
+import Slider from './../../components/common/slider';
+
+
+
 export default function HomeScreen() {
   return (
-    <ScrollView style={styles.container}>
-       <View>
-           <Text>HomeScreen</Text>
-       </View>
+    
+       <Slider />
        
-    </ScrollView>
+    
   );
 }
 
