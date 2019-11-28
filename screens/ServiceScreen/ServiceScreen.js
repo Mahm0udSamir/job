@@ -1,14 +1,23 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Dimensions, StyleSheet, ScrollView, View } from 'react-native';
+import Card from './../../components/common/card';
  
 export default function ServiceScreen() {
   return (
-    <ScrollView style={styles.container}>
-       <View>
-           <Text>ServiceScreen</Text>
-       </View>
-       
-    </ScrollView>
+      <ScrollView contentContainerStyle={styles.container}>
+          
+              <Card color="#ff5a85" iconName="md-construct" title="Service" />
+              <Card color="#ffa13d" iconName="md-fitness" title="Fitness" />
+              <Card color="#ffa13d" iconName="md-construct" title="Service" />
+              <Card color="#6087ff" iconName="md-fitness" title="Fitness" />
+              <Card color="#ff5a85" iconName="md-construct" title="Service" />
+              <Card color="#ffa13d" iconName="md-fitness" title="Fitness" />
+              <Card color="#6dcbcb" iconName="md-fitness" title="Fitness" />
+              
+      </ScrollView>
+    
+ 
+   
   );
 }
 
@@ -18,8 +27,8 @@ export default function ServiceScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    paddingTop: 15,
-    backgroundColor: '#fff',
-  },
+    width: '100%',
+    flexDirection: 'row',
+    flexWrap: 'wrap'
+  }
 });
